@@ -6,8 +6,6 @@ WORKDIR /project
 
 RUN apk add nodejs=$NODE_VERSION npm=$NODE_VERSION && \
     rm -rf /var/cache/apk/* 
-    #&& \
-    #npm cache clean --force
 
 EXPOSE 3000
 
