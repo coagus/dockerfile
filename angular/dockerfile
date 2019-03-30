@@ -1,0 +1,14 @@
+FROM alpine:3.9
+
+ENV NODE_VERSION=10.14.2-r0 NG_VERSION=7.3.7
+
+WORKDIR /project
+
+RUN apk add git nodejs=$NODE_VERSION npm=$NODE_VERSION && \
+    npm install --no-optional -g @angular/cli@$NG_VERSION && \
+    rm -rf /tmp/* /var/cache/apk/* && \
+    npm cache clean --force
+
+EXPOSE 4200
+
+#CMD ["ng serve --host 0.0.0.0"]
