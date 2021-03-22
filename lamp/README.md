@@ -9,7 +9,7 @@ git clone https://github.com/<user>/<php repo>.git web
 ```
 Create your image
 ```sh
-docker build -t coagus/lamp .
+docker build -t <user>/lamp .
 ```
 Run your containter
 ```sh
