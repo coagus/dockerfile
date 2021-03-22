@@ -13,7 +13,7 @@ docker build -t <user>/lamp .
 ```
 Run your containter
 ```sh
-docker run -it -d -p 80:80 -p 443:443 -p 3306:3306 --name=dev -v "$(pwd)"/web:/var/www/html coagus/lamp
+docker run -it -d -p 80:80 -p 443:443 -p 3306:3306 --name=dev -v "$(pwd)"/web:/var/www/html <user>/lamp
 ```
 Excecute your script
 ```sh
